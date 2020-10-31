@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 
-// Constante de préprocesseur
+// Constante de prÃ©processeur
 #define NB_POINTS_MAX 100
 #define DIM 3
 
@@ -14,8 +14,8 @@ void calculer_som(int nbpts, double pts[NB_POINTS_MAX][DIM], double som[DIM]);
 double calculer_aire(double som[DIM]);
 
 /* ----------------------------------------------- */
-// Fonction demandant à l'utilisateur le nombre de points à saisir
-// Et demande à l'utilisateur de renseigner les valeurs de ces points
+// Fonction demandant Ã  l'utilisateur le nombre de points Ã  saisir
+// Et demande Ã  l'utilisateur de renseigner les valeurs de ces points
 int saisir_points(double pts[NB_POINTS_MAX][DIM]) {
     int nbpts, i;
     printf("\nNombre de points du polygone ? ");
@@ -87,6 +87,6 @@ int main(void) {
 
     double aire = calculer_aire(som);
 
-    printf("\nL’aire de votre polygone est : %lf\n", aire);
+    printf("\nLâ€™aire de votre polygone est : %lf\n", aire);
     return 0;
 }
