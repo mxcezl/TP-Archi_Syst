@@ -1,6 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// Prototypes
+int charge(Adresse t[], char nom_fichier[]);
+void sauvegarde(Adresse t[], int n, char nom_fichier[]);
+int total_prenom(Adresse t[], int n, char prenom[]);
+int total_loc(Adresse t[], int n);
+void saisies(Adresse t[], int n);
+int verifie(Adresse a);
+int check_majuscules(char s[]);
+void affiche(Adresse a);
+Adresse saisie_adresse();
+void saisie_ligne(char s[38]);
+int concat(char ch1[], const char ch2[], int max_ch1);
+int longueur(char *c);
+int compare(const char ch1[], const char ch2[]);
+
 // Renvoie 0 si les deux chaines sont identiques
 // Renvoie une valeur positive si ch1 vient après ch2 selon l’ordre du dictionnaire
 // Renvoie une valeur négative dans le cas contraire
@@ -140,8 +155,8 @@ void sauvegarde(Adresse t[], int n, char nom_fichier[]) {
 
 
 int charge(Adresse t[], char nom_fichier[]) {
-    FILE *f = fopen(nom_fichier, "r");   
-    
+    FILE *f = fopen(nom_fichier, "r");
+
     fcolse(f):
 }
 
